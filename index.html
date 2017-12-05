@@ -1,104 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  	<title>Form Validation</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-	
-</head>
-<body>
- 
-<form id="mir" action="form.html" method="post">
-	<CENTER><b><h2> Particulars for Admission in Coding Boot Camp </h2></b></CENTER><br>
-	       First name: <input type = "text" name="fname" value=" " maxlength="15">(max 15 characters a-z)<br>
-	       Last name : <input type = "text" name="lname" value="  " maxlength="15">(max 15 characters a-z)<br>
-    <tr><td>Gender:</td></tr><select name="dropdown"><br><br><br>
-          <option>Male</option>
-          <option>Female</option>
-          <option>LGBTQQ</option>
-          </select><br></td></tr>
-    Date of Birth  : <input type =  "date" id="dateofbirth" name="dob"><br>
-             Email : <input type = "email" name="email" value=" "   maxlength="25">(max 25 character)<br>
-	        Password : <input type = "password" name="pwd" value=" "  maxlength="20">(max 20 alphanumeric)<br>
-	         Mobile  : <input type =  "mobile" name="ph" value=" "     maxlength="10">(10 digit number)<br>
-	         Address : <input type = "text" name="address"  value=" "> <br></br>
-	   <tr><td>State:</td><td><select name="dropdown">
-	   	 <option>Alabama</option>
-          <option>Alaska</option>
-          <option>Arizona</option>
-          <option>Arkansas</option>
-          <option>California</option>
-          <option>Colorado</option>
-          <option>Connecticut</option>
-          <option>Delware</option>
-          <option>Florida</option>
-          <option>Georgia</option>
-          <option>Hawaii</option>
-          <option>Idaho</option>
-          <option>Illinois</option>
-          <option>Indiana</option>
-          <option>Iowa</option>
-          <option>Kansas</option>
-          <option>Kentucky</option>
-          <option>Louisiana</option>
-          <option>Maine</option>
-          <option>Maryland</option>
-          <option>Massachusetts</option>
-          <option>Michigan</option>
-          <option>Minnesota</option>
-          <option>Mississippi</option>
-          <option>Missouri</option>
-          <option>Nebraska</option>
-          <option>Nevada</option>
-          <option>New Hampshire</option>
-          <option>New Jersey</option>
-          <option>New Mexico</option>
-          <option>New York</option>
-          <option>North Carolina</option>
-          <option>North Dakota</option>
-          <option>Ohio</option>
-          <option>Oklahoma</option>
-          <option>Oregon</option>
-          <option>Pennsylvania</option>
-          <option>Rhode Island</option>
-          <option>South Carolina</option>
-          <option>South Dakota</option>
-          <option>Tennessee</option>
-          <option>Texas</option>
-          <option>Utah</option>
-          <option>Vermont</option>
-          <option>Virginia</option>
-          <option>Washington</option>
-          <option>West Virginia</option>
-          <option>Wisconsin</option>
-          <option>Wyoing</option>
-          </select></td></tr>
-        <br /><br />
-        <tr><td>Zip Code:</td>
-        <td><input type="text" name="Zip" /></td></tr><br><br /><br />
-	   <tr><td>Coding Boot Camp:</td><td><select name="dropdown">
-	   	 <option>Georgia Tech Coding Boot Camp</option>
-          <option>Fullstack Academy</option>
-          <option>AppAcademy</option>
-          <option>Bloc</option>
-          <option>Startup Institute</option>
-          <option>Flatiron School</option>
-          <option>Epicodius</option>
-          <option>Actualize</option>
-          <option>Designation</option>
-          <option>V School</option>
-        </select></td></tr>
-        <br /><br />
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title> Simple Form Validation</title>
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
+     <script src="js/validate.js"></script>
+  </head>
+    
+</div>
+  <body>
+      <h1>Form Validation</h1>
+      <form class="form-register" action="thanks.html" method="post" onsubmit="return validate();">
+      <h2 class="form__title">Create an Account</h2>
+      <div class="container-input">
+        <input class="input-mid" id="firstname" type="text" name="firstname" maxlength="25" placeholder="First Name">
+        <input class="input-mid" id="lastname" type="text" name="lastname" maxlength="20" placeholder="Last Name">
+        <input class="input-total" id="email" type="email" name="email" maxlength="30" placeholder="E-mail Address">
+        <input class="input-mid" id="username" type="text" name="username" maxlength="20"  placeholder="Username">
+        <input class="input-mid" id="password" type="password" name="password" maxlength="20" placeholder="Password">
+        <input class="input-total" id="mobile" type="text" name="mobile" maxlength="15" placeholder="Mobile#">
+        <p> message: <br/><textarea cols="61" rows="10" name="msg" id="message" maxlength="500" placeholder="Maxlength:500 alphanumeric characters"></textarea> <br><br><br></p>
+        <input class= "btn-send" type="submit" value="Sign Me Up">
+        </div>
+    </form>
 
-<b><i>Jot down your expectation from the Coding Boot Camp</i></b><br/><textarea cols="100" rows="10" name="msg" id="message" maxlength="500"></textarea> <br><br><br>
-
-	<input type="submit" value="Submit">
-	</form>
-
-<p>Click "Try it" to display the value of each element in the form.</p>
-<button onclick="myFunction()">Try it</button>
-<p id="aayan"></p>
-<script src="form.js"></script>
-</body>
+    </body>
 </html>
